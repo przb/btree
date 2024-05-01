@@ -1,6 +1,7 @@
 .idea
 .vscode
 
+btree
 cmake-build-debug
 
 CMakeLists.txt.user

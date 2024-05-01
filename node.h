@@ -17,6 +17,7 @@ private:
     int keys[MAX_KEYS];
     node *children[BRANCHING_FACTOR];
     int size;
+    bool is_full;
 public:
 
     // When creating a new node, we put the item in the keys array, and set its children to null.
@@ -25,6 +26,8 @@ public:
     // when destructing a node, we are going to recursively destruct all the children, and remove all thekeys
     ~node();
 
+    // insert only when the node is not full
+    bool insert(int val);
 };
 
 

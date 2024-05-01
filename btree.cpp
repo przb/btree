@@ -14,3 +14,7 @@ btree::btree(int k) {
 btree::~btree() {
     std::cout << "Goodbye World" << std::endl;
 }
+
+void btree::insert(int key) {
+    node* root = this->root;
+}
