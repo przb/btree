@@ -13,12 +13,13 @@
 
 
 class node {
+
 private:
-    int keys[MAX_KEYS];
     node *children[BRANCHING_FACTOR];
+public:
+    int keys[MAX_KEYS];
     int size;
     bool is_full;
-public:
 
     // When creating a new node, we put the item in the keys array, and set its children to null.
     node(int val);
