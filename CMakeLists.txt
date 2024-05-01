@@ -1,6 +1,6 @@
-cmake_minimum_required(VERSION 3.28)
+cmake_minimum_required(VERSION 3.22)
 project(btree)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_library(btree STATIC library.cpp)
+add_executable(btree main.cpp)
